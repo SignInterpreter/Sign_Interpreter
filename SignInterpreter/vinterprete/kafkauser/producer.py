@@ -5,15 +5,15 @@ from data.values import extract_keypoints
 import asyncio
 from threading import Thread
 
-class RunThread(threading.Thread):
-    def __init__(self, func, img, holistic):
-        self.func = func
-        self.ing = img
-        self.hoistic = holistic
-        threading.Thread.__init__()
+# class RunThread(threading.Thread):
+#     def __init__(self, func, img, holistic):
+#         self.func = func
+#         self.ing = img
+#         self.hoistic = holistic
+#         threading.Thread.__init__()
 
-    def run(self):
-        self.result = asyncio.run(self.func(self.img, self.holistic))
+#     def run(self):
+#         self.result = asyncio.run(self.func(self.img, self.holistic))
 
 def kafkakeypoints(img,holistic):
        
